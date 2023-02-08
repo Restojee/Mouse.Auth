@@ -1,0 +1,61 @@
+2023-01-11T08:47:22.467+05:00 DEBUG 10560 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /oauth2/token?continue
+2023-01-11T08:47:22.485+05:00 DEBUG 10560 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-01-11T08:47:22.489+05:00 DEBUG 10560 --- [http-nio-8080-exec-6] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/oauth2/token?continue&continue to session
+2023-01-11T08:47:22.489+05:00 DEBUG 10560 --- [http-nio-8080-exec-6] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/login
+2023-01-11T08:47:22.494+05:00 DEBUG 10560 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /login
+2023-01-11T08:47:25.331+05:00 DEBUG 10560 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /login
+2023-01-11T08:47:25.417+05:00 DEBUG 10560 --- [http-nio-8080-exec-8] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'admin'
+2023-01-11T08:47:25.418+05:00 DEBUG 10560 --- [http-nio-8080-exec-8] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /login?error
+2023-01-11T08:47:25.421+05:00 DEBUG 10560 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /login?error
+2023-01-11T08:47:29.691+05:00 DEBUG 10560 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /login
+2023-01-11T08:47:29.789+05:00 DEBUG 10560 --- [http-nio-8080-exec-10] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'rest'
+2023-01-11T08:47:29.790+05:00 DEBUG 10560 --- [http-nio-8080-exec-10] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /login?error
+2023-01-11T08:47:29.799+05:00 DEBUG 10560 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /login?error
+2023-01-11T08:48:04.038+05:00 DEBUG 10560 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /login
+2023-01-11T08:48:04.124+05:00 DEBUG 10560 --- [http-nio-8080-exec-2] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2023-01-11T08:48:04.124+05:00 DEBUG 10560 --- [http-nio-8080-exec-2] .s.ChangeSessionIdAuthenticationStrategy : Changed session id from 19BBBD1294B2114A56F8B2328624EAE5
+2023-01-11T08:48:04.124+05:00 DEBUG 10560 --- [http-nio-8080-exec-2] o.s.s.w.csrf.CsrfAuthenticationStrategy  : Replaced CSRF Token
+2023-01-11T08:48:04.124+05:00 DEBUG 10560 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=19BBBD1294B2114A56F8B2328624EAE5], Granted Authorities=[ROLE_USER]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@65c92e73]
+2023-01-11T08:48:04.125+05:00 DEBUG 10560 --- [http-nio-8080-exec-2] w.a.UsernamePasswordAuthenticationFilter : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=19BBBD1294B2114A56F8B2328624EAE5], Granted Authorities=[ROLE_USER]]
+2023-01-11T08:48:04.125+05:00 DEBUG 10560 --- [http-nio-8080-exec-2] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/oauth2/token?continue&continue
+2023-01-11T08:48:04.129+05:00 DEBUG 10560 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /oauth2/token?continue&continue
+2023-01-11T08:48:04.130+05:00 DEBUG 10560 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=19BBBD1294B2114A56F8B2328624EAE5], Granted Authorities=[ROLE_USER]]]
+2023-01-11T08:48:04.130+05:00 DEBUG 10560 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /oauth2/token?continue&continue
+2023-01-11T08:48:04.137+05:00 DEBUG 10560 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error?continue&continue
+2023-01-11T08:48:04.138+05:00 DEBUG 10560 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=19BBBD1294B2114A56F8B2328624EAE5], Granted Authorities=[ROLE_USER]]]
+2023-01-11T08:48:04.138+05:00 DEBUG 10560 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /error?continue&continue
+2023-01-11T09:22:09.129+05:00  INFO 15732 --- [restartedMain] com.mouse.auth.AuthApplication           : Starting AuthApplication using Java 19.0.1 with PID 15732 (D:\GitProjects\Mouse.Spring\Mouse.Auth\target\classes started by Rest in D:\GitProjects\Mouse.Spring\Mouse.Auth)
+2023-01-11T09:22:09.130+05:00  INFO 15732 --- [restartedMain] com.mouse.auth.AuthApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-01-11T09:22:09.166+05:00  INFO 15732 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-11T09:22:09.166+05:00  INFO 15732 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-11T09:22:09.754+05:00  INFO 15732 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-11T09:22:09.768+05:00  INFO 15732 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2023-01-11T09:22:10.180+05:00  INFO 15732 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-11T09:22:10.187+05:00  INFO 15732 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-11T09:22:10.187+05:00  INFO 15732 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-11T09:22:10.232+05:00  INFO 15732 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-11T09:22:10.233+05:00  INFO 15732 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1066 ms
+2023-01-11T09:22:10.274+05:00  WARN 15732 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2023-01-11T09:22:10.276+05:00  INFO 15732 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-11T09:22:10.292+05:00  INFO 15732 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-01-11T09:22:10.304+05:00 ERROR 15732 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
