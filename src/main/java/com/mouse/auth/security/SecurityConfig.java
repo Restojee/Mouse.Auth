@@ -36,8 +36,8 @@ public class SecurityConfig {
 
         http
             .csrf(AbstractHttpConfigurer::disable)
-            .sessionManagement()
-            .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+            .sessionManagement();
+            //.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
         return http.build();
     }
